@@ -1,8 +1,7 @@
 package plt.learning;
 
-import com.google.gson.Gson;
 import lombok.AllArgsConstructor;
-import lombok.Lombok;
+
 
 /**
  * Hello world!
@@ -20,17 +19,15 @@ public class App {
 
         ExampleModel exampleModel = new ExampleModel();
 
-        exampleModel.getWidth();
+        exampleModel.setAge(5);
+        exampleModel.setHeight(160);
+        exampleModel.setWidth(90);
+        exampleModel.setHairColor("Brown");
+        exampleModel.setMale(true);
 
-
-
+        System.out.println(exampleModel);
 
         System.out.println("Hello World!");
-
-        new Gson();
-
-        new Lombok();
-
 
     }
 }

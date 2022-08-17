@@ -2,7 +2,9 @@ package plt.learning;
 
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
+@ToString
 public class ExampleModel {
 
     @Getter @Setter
@@ -13,9 +15,11 @@ public class ExampleModel {
     private int width;
     @Getter @Setter
     private boolean isMale;
+    @Getter @Setter
+    private int age;
+
 
     //normalnie dajemy settery i gettery
-
 
 //    public String getHairColor() {
 //        return hairColor;

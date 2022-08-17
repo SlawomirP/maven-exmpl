@@ -6,22 +6,26 @@ import lombok.Lombok;
 
 /**
  * Hello world!
- *
  */
 
 @AllArgsConstructor
-public class App 
-{
+public class App {
     Boolean a;
     Boolean b;
     Boolean c;
-    public static void main( String[] args )
-    {
-        new App(true, true, true){
+
+    public static void main(String[] args) {
+        new App(true, true, true) {
         };
 
+        ExampleModel exampleModel = new ExampleModel();
 
-        System.out.println( "Hello World!" );
+        exampleModel.getWidth();
+
+
+
+
+        System.out.println("Hello World!");
 
         new Gson();
 

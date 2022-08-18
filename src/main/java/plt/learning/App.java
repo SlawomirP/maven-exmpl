@@ -6,11 +6,6 @@ import lombok.extern.java.Log;
 
 import java.util.logging.Logger;
 
-
-/**
- * Hello world!
- */
-
 @AllArgsConstructor
 @Log
 public class App {
@@ -60,7 +55,8 @@ public class App {
                 .hairColor("black")
                 .age(5)
                 .isMale(true)
-                .width(44).build();
+                .width(44)
+                .build();
 
         System.out.println(exampleModel3);
 

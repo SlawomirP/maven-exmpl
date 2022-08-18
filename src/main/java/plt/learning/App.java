@@ -1,6 +1,9 @@
 package plt.learning;
 
+import com.sun.tools.javac.Main;
 import lombok.AllArgsConstructor;
+
+import java.util.logging.Logger;
 
 
 /**
@@ -9,9 +12,13 @@ import lombok.AllArgsConstructor;
 
 @AllArgsConstructor
 public class App {
+
     Boolean a;
     Boolean b;
     Boolean c;
+
+    //do loggera
+    private static final Logger logo = Logger.getLogger(Main.class.getName());
 
     public static void main(String[] args) {
         new App(true, true, true) {
@@ -47,11 +54,12 @@ public class App {
         //teraz na obiekcie example model statycznie wywoluje builder
         //nastepnie na nim ustawiam parametry
 
-        exampleModel.builder()
+        ExampleModel exampleModel3 = ExampleModel.builder()
+                .hairColor("black")
                 .age(5)
                 .isMale(true)
-                .width(44);
+                .width(44).build();
 
-        System.out.println(exampleModel);
+        System.out.println(exampleModel3);
     }
 }

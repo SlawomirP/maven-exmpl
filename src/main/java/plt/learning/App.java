@@ -2,6 +2,7 @@ package plt.learning;
 
 import com.sun.tools.javac.Main;
 import lombok.AllArgsConstructor;
+import lombok.extern.java.Log;
 
 import java.util.logging.Logger;
 
@@ -11,6 +12,7 @@ import java.util.logging.Logger;
  */
 
 @AllArgsConstructor
+@Log
 public class App {
 
     Boolean a;
@@ -18,7 +20,7 @@ public class App {
     Boolean c;
 
     //do loggera
-    private static final Logger logo = Logger.getLogger(Main.class.getName());
+//    private static final Logger logo = Logger.getLogger(Main.class.getName());
 
     public static void main(String[] args) {
         new App(true, true, true) {
@@ -61,5 +63,7 @@ public class App {
                 .width(44).build();
 
         System.out.println(exampleModel3);
+
+        log.info("komunikat x logo");
     }
 }

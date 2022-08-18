@@ -42,5 +42,6 @@ public class App {
         System.out.println(exampleModelDuplicate);
 
         System.out.println(exampleModelDuplicate.equals(exampleModelDuplicate)); //false
+
     }
 }

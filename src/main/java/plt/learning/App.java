@@ -27,7 +27,17 @@ public class App {
 
         System.out.println(exampleModel);
 
-        System.out.println("Hello World!");
+        //@EqualsAndHashCode
+        //standardowe porownanie equalsnie nadpisanym da false
 
+        ExampleModel exampleModelDuplicate = new ExampleModel();
+
+        exampleModel.setAge(5);
+        exampleModel.setHeight(160);
+        exampleModel.setWidth(90);
+        exampleModel.setHairColor("Brown");
+        exampleModel.setMale(true);
+
+        System.out.println(exampleModel.equals(exampleModelDuplicate));
     }
 }

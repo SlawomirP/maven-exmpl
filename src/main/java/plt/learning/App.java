@@ -43,5 +43,15 @@ public class App {
 
         System.out.println(exampleModelDuplicate.equals(exampleModelDuplicate)); //false
 
+        //z uzyciem buildera, w klasie ExampleModel dodalem @Builder
+        //teraz na obiekcie example model statycznie wywoluje builder
+        //nastepnie na nim ustawiam parametry
+
+        exampleModel.builder()
+                .age(5)
+                .isMale(true)
+                .width(44);
+
+        System.out.println(exampleModel);
     }
 }
